@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HTML CODE -->
+<head>
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="irave.js"></script>
+    <meta charset="utf-8">
+</head>
+
+
+<body onload="mostrarHoras()">
+    <img src="apple-watch-mockup-free-1000x732.jpg" id="relogio">
+    <div class="janelacontainer">
+        <div class="janela">
+            <div class="barra">
+                <i class="fas fa-angle-left" onclick="undo();"></i>
+                <div class="barra-item subtitulo palco">Palco 2</div>
+                <i class="fas fa-angle-right" onclick="location.href = 'palco3.html';"></i>
+                <div class="barra-item clock"></div>
+            </div>
+            <div class="lista">
+                <div class="nome currentband">
+                    Red Velvet 
+                    <div class="tempo"> 16:30 </div>
+                </div>
+                <div class="nome nextband">
+                    Shakira 
+                    <div class="tempo"> 18:30 </div>
+                </div>
+                <div class="nome"> 
+                    Katy Perry 
+                    <div class="tempo"> 20:30 </div>
+                </div>
+                <div class="nome"> 
+                    Selena Gomez 
+                    <div class="tempo"> 22:30 </div>
+                </div>
+                <div class="nome"> 
+                    Ariana Grande
+                    <div class="tempo"> 00:30 </div> 
+                </div>
+                <div class="nome last"> 
+                    LMFAO
+                    <div class="tempo"> 02:30 </div>
+                </div>
+            </div>
+        </div>
+        <div onclick="undo2();" class="undo"></div>
+    </div>
+</body>
+
+
+</html>

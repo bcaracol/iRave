@@ -1,0 +1,105 @@
+html, body {
+	height: 100%; 
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.janela {
+	width: 1.5in;
+	height: 1.5in;
+	border: 3px solid black;
+	border-top-right-radius: 0.1in;
+	border-top-left-radius: 0.1in;
+	border-bottom-right-radius: 0.1in;
+	border-bottom-left-radius: 0.1in;
+	margin: auto;
+}
+
+.barra {
+	width: 100%;
+	height: 20%;
+}
+
+.subtitulo {
+	height: 100%;
+	line-height: 0.3in;
+	float: left;
+	padding-left: 2%;
+}
+
+.clock {
+	height: 100%;
+	line-height: 0.3in;
+	float: right;
+	padding-right: 2%;
+}
+
+.barra:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lista {
+	width: 100%;
+	height: 80%;
+	overflow: auto;
+}
+
+.nome {
+	height: 30%;
+	border-top: 1px solid black;
+	padding-left: 2%;
+	line-height: 0.36in;
+}
+
+.preco {
+	height: 30%;
+	padding-left: 2%;
+	line-height: 0.36in;
+	float: right;
+	padding-right: 1%
+}
+
+.categoria {
+	height: 33%;
+	border-top: 0.5px solid black;
+	text-align: center;
+	line-height: 0.396in;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.total {
+	font-size: 10pt;
+}
+
+.botao {
+	text-align: center;
+}
+
+#payment-question {
+	text-align: center;
+}
+
+.button {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+::-webkit-scrollbar {
+    width: 3%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgrey;
+}
+
+::-webkit-scrollbar-thumb {
+  	background-color: darkgrey;
+}
+

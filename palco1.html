@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HTML CODE -->
+<head>
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="irave.js"></script>
+    <meta charset="utf-8">
+</head>
+
+
+<body onload="mostrarHoras()">
+    <img src="apple-watch-mockup-free-1000x732.jpg" id="relogio">
+    <div class="janelacontainer">
+        <div class="janela">
+            <div class="barra">
+                <i class="fas fa-angle-left opacity05"></i>
+                <div class="barra-item subtitulo palco">Palco 1</div>
+                <i class="fas fa-angle-right" onclick="location.href = 'palco2.html';"></i>
+                <div class="barra-item clock"></div>
+            </div>
+            <div class="lista">
+                <div class="nome opacity05">
+                    Aerosmith
+                    <div class="tempo"> 16:00 </div>
+                </div>
+                <div class="nome">
+                    Foo Fighters 
+                    <div class="tempo"> 18:00 </div>
+                </div>
+                <div class="nome"> 
+                    Guns N Roses 
+                    <div class="tempo"> 20:00 </div>
+                </div>
+                <div class="nome"> 
+                    Metallica 
+                    <div class="tempo"> 22:00 </div>
+                </div>
+                <div class="nome"> 
+                    AC/DC
+                    <div class="tempo"> 00:00 </div> 
+                </div>
+                <div class="nome last"> 
+                    Led Zeppelin
+                    <div class="tempo"> 02:00 </div>
+                </div>
+            </div>
+        </div>
+        <div onclick="undo();" class="undo"></div>
+    </div>
+</body>
+
+
+</html>

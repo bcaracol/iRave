@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HTML CODE -->
+<head>
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="irave.js"></script>
+    <meta charset="utf-8">
+</head>
+
+
+<body onload="mostrarHoras()">
+    <img src="apple-watch-mockup-free-1000x732.jpg" id="relogio">
+    <div class="janelacontainer">
+        <div class="janela">
+            <div class="barra">
+                <i class="fas fa-angle-left" onclick="undo();"></i>
+                <div class="barra-item subtitulo palco">Palco 3</div>
+                <i class="fas fa-angle-right opacity05"></i>
+                <div class="barra-item clock"></div>
+            </div>
+            <div class="lista">
+                <div class="nome">
+                    MGMT
+                    <div class="tempo"> 19:00 </div>
+                </div>
+                <div class="nome"> 
+                    Steve Aoki 
+                    <div class="tempo"> 21:00 </div>
+                </div>
+                <div class="nome"> 
+                    Skrillex 
+                    <div class="tempo"> 23:00 </div>
+                </div>
+                <div class="nome"> 
+                    DJ House
+                    <div class="tempo"> 01:00 </div> 
+                </div>
+                <div class="nome last"> 
+                    Chemical Brothers
+                    <div class="tempo"> 03:00 </div>
+                </div>
+            </div>
+        </div>
+        <div onclick="undo3();" class="undo"></div>
+    </div>
+</body>
+
+
+</html>

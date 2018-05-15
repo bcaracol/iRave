@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HTML CODE -->
+<head>
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="jquery-3.3.1.min.js"></script>
+  	<script src="jquery-ui.min.js"></script>
+    <script src="irave.js"></script>
+    <meta charset="utf-8">
+</head>
+
+
+<body onload="mostrarHoras(); acordeao(); showAmigo()">
+    <img src="apple-watch-mockup-free-1000x732.jpg" id="relogio">
+    <div class="janelacontainer">
+        <div class="janela">
+            <div class="barra">
+                <div class="barra-item subtitulo">Amigos</div>
+                <div class="barra-item clock"></div>
+            </div>
+            <div class="lista">
+                <div class="botao adicionar" onclick="addAmigoNao()">
+                    Adicionar Amigo
+                </div>
+                <div id="accordion">
+                    <div class="nome amigo"> 
+                        Artur Caracol
+                        <div class="localizacao"> Junto à Entrada 1 </div>   
+                    </div>
+                    <div class="nome collapse">
+                        <a href="amigoschamarconf.html" class="collapse-item floatright">Chamar</a>
+                        <a href="mapaAC.html" class="collapse-item floatleft">Localizar</a> 
+                    </div>
+                    <div class="nome amigo" id="BC"> 
+                        Bárbara Caracol
+                        <div class="localizacao"> Junto ao Palco 2 </div>
+                    </div>
+                    <div class="nome collapse">
+                        <a href="amigoschamarconf.html" class="collapse-item floatright">Chamar</a>
+                        <a href="mapaBC.html" class="collapse-item floatleft">Localizar</a>
+                    </div>
+                    <div class="nome amigo"> 
+                        Daniel Araújo
+                        <div class="localizacao"> Junto aos Restaurantes </div>
+                    </div>
+                    <div class="nome collapse">
+                        <a href="amigoschamarconf.html" class="collapse-item floatright">Chamar</a>
+                        <a href="mapaDA.html" class="collapse-item floatleft">Localizar</a> 
+                    </div>
+                    <div class="nome amigo" id="JA"> 
+                        João Antunes
+                        <div class="localizacao"> Junto ao Palco 3 </div>
+                    </div>
+                    <div class="nome collapse">
+                        <a href="amigoschamarconf.html" class="collapse-item floatright">Chamar</a>
+                        <a href="mapaJA.html" class="collapse-item floatleft">Localizar</a>
+                    </div>
+                    <div class="nome amigo" id="TG"> 
+                        Tiago Garcia
+                        <div class="localizacao"> Junto ao Palco 1 </div>
+                    </div>
+                    <div class="nome collapse">
+                        <a href="amigoschamarconf.html"class="collapse-item floatright">Chamar</a>
+                        <a href="mapaTG.html" class="collapse-item floatleft">Localizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div onclick="undo();" class="undo"></div>
+    </div>
+</body>
+
+
+</html>

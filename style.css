@@ -1,0 +1,394 @@
+/* GERAL */
+
+@font-face {
+    font-family: SFCompactTextRegular;
+    src: url(SFCompactText-Regular.otf);
+}
+
+html, body {
+	height: 100%; 
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: SFCompactTextRegular;
+    font-size: 12pt;
+    color: #f2f4ff;
+}
+
+.janela {
+	width: 200px;
+	height: 200px;
+	border: 3px solid black;
+    border-radius: 0.1in;
+	margin: auto;
+    background-color: black;
+}
+
+.barra {
+	width: 100%;
+	height: 15%;
+}
+
+.subtitulo {
+	height: 100%;
+	line-height: 30px;
+	float: left;
+	padding-left: 2%;
+}
+
+.clock {
+	height: 100%;
+	line-height: 30px;
+	float: right;
+	padding-right: 2%;
+}
+
+.barra:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* MENU PRINCIPAL */
+
+.menu-principal {
+	position: relative;
+	width: 100%;
+	height: 85%;
+}
+
+.menu-item {
+	position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item img {
+    height: 85%;
+}
+
+.subtitulo img {
+    height: 85%;
+    margin-left: 2%;
+    margin-top: 12%;
+}
+
+#amigos {
+	top: 0;
+}
+
+#mapa {
+	right: 0;
+}
+
+#senhas {
+	bottom: 0;
+}
+
+#cartaz {
+	bottom: 0;
+	right: 0;
+}
+
+.janelacontainer {
+    position: absolute;
+    height: 250px;
+    width:250px;
+    top: 210px;
+    left: 320px;
+    max-height: 250px;
+    max-width: 250px;
+    margin: auto;
+}
+
+.undo {
+    position: absolute;
+    top:111px;
+    right: 0;
+    width: 7px;
+	height: 65px;
+    border-radius: 0.1in;
+    background-color: grey;
+}
+
+#relogio {
+    height: 651px;
+    width: 890px;
+}
+
+
+/* MAPA */
+
+.ecra {
+	position: relative;
+	width: 100%;
+	height: 85%;
+    overflow: hidden;
+}
+
+.mapacontainer {
+	width: 100%;
+	height: 100%;
+}
+
+.mapa {
+	position: absolute;
+    height: 200px;
+}
+
+.barra-item.sostimer {
+	height: 100%;
+	line-height: 30px;
+	float: left;
+	padding-left: 4%;
+}
+
+
+/* LISTAS  */
+
+.lista {
+	width: 100%;
+	height: 85%;
+	overflow: auto;
+}
+
+.nome {
+	height: 30%;
+	border-top: 1px solid grey;
+	padding-left: 2%;
+	line-height: 51px;
+}
+
+.tempo {
+	height: 30%;
+	padding-left: 2%;
+	line-height: 51px;
+	float: right;
+	padding-right: 1%
+}
+
+.last {
+    border-bottom: 1px solid grey;
+}
+
+::-webkit-scrollbar {
+    width: 2%;
+    border-radius: 0.1in;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgrey;
+    border-radius: 0.1in;
+}
+
+::-webkit-scrollbar-thumb {
+  	background-color: darkgrey;
+    border-radius: 0.1in;
+}
+
+
+.texto {
+    text-align: center;
+    line-height: 0.25in;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+
+.opcoes {
+    height: 100%;
+    width: 100%;
+}
+
+.sim {
+    float: right;
+    padding: 20px;
+    margin-top: 15px;
+    margin-right: 17px;
+    background-color: red;
+    border-radius: 0.1in;
+}
+
+.nao {
+    float: left;
+    padding: 20px;
+    margin-top:15px;
+    margin-left: 17px;
+    background-color: grey;
+    border-radius: 0.1in;
+}
+
+.ajuda {
+    margin: 20px;
+}
+
+a {
+	color: #f2f4ff;
+	text-decoration: none;
+}
+
+
+/* AMIGOS */
+
+/*.submenu {
+    width: 100%;
+    height: 85%;
+} APAGAR */
+
+.botao.adicionar {
+    height: 28%;
+	line-height: 47.6px;
+    text-align: center;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 0.1in;
+    background-color: #303030;
+}
+
+.collapse{
+    background-color: #303030;    
+}
+
+.collapse-item {
+	line-height: 51px;
+    width: 42%;
+    border-right: 1px solid grey;
+}
+
+.floatright {
+    float: right;
+}
+
+.floatleft {
+    float: left;
+}
+
+.collapse-item.floatleft {
+    padding-left: 7%;
+
+}
+
+.collapse:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ok {
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 12%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0.1in;
+    background-color: grey;
+}
+
+.texto2{
+    text-align: center;
+    margin-top:15%;
+    margin-bottom: 15%;
+}
+
+.texto2-5 {
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.texto3 {
+    text-align: center;
+    margin-top: 13%;
+}
+
+#JA {
+    display: none;
+}
+
+#BC {
+    display: none;
+}
+
+#TG {
+    display: none;
+}
+
+.simverde {
+    background-color: #51a088;
+}
+
+.nome.amigo {
+    line-height: 21px;
+    padding-top: 6px;
+}
+
+.localizacao {
+    line-height: 21px;
+    padding-bottom: 6px;
+    font-size: 14.5px;
+    color: lightgray
+}
+
+
+/* CARTAZ */
+
+.texto3.cartaz {
+    margin-top: 8%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 8px;
+    border-radius: 0.1in;
+    background-color: grey;
+}
+
+.opacity05 {
+    opacity: 0.5;
+}
+
+.currentband {
+    /*border-color: #51a088;*/
+    border-left: 7px solid #51a088;
+    padding-left: 8px;
+}
+
+.nextband {
+    /*border-color: #51a088;*/
+}
+
+.palco {
+    padding: 0;
+    margin-left: 6px;
+}
+
+.fas.fa-angle-left {
+    float: left;
+    margin-left: 59px;
+    margin-top: 7px;
+}
+
+.fas.fa-angle-right {
+    float: left;
+    margin-left: 6px;
+    margin-top: 7px;
+}
+
+
+/* COMIDA */
+
+.opcao3 {
+	height: 28%;
+	line-height: 47.6px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 7px;
+    border-radius: 0.1in;
+    background-color: #303030;
+}
+
+
+
+

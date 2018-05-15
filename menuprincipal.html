@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HTML CODE -->
+<head>
+    <title>iRave</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="irave.js"></script>
+    <meta charset="utf-8">
+</head>
+
+
+<body onload="mostrarHoras(); continuesostimer2()">
+    <img src="apple-watch-mockup-free-1000x732.jpg" id="relogio">
+    <div class="janelacontainer">
+        <div class="janela">
+            <div class="barra">
+                <div class="barra-item subtitulo"><img src="helpicon.png"></div>
+                <div class="barra-item sostimer"></div>
+                <div class="barra-item clock"></div>
+            </div>
+            <div class="menu-principal">
+                <a href="amigoslista.html" id="amigos" class="menu-item">
+                    <img src="friendsicon.png">
+                </a>
+                <a href="mapa.html" id="mapa" class="menu-item">
+                    <img src="mapicon.png">
+                </a>
+                <a href="food.html" id="senhas" class="menu-item">
+                    <img src="foodicon.png">
+                </a>
+                <a href="cartaz.html" id="cartaz" class="menu-item">
+                    <img src="calendarmusic.png">
+                </a>
+            </div>
+        </div>
+        <div onclick="undo();" class="undo"></div>
+    </div>
+</body>
+
+
+</html>

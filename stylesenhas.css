@@ -1,0 +1,135 @@
+@font-face {
+    font-family: SFCompactTextRegular;
+    src: url(SFCompactText-Regular.otf);
+}
+
+html, body {
+	height: 100%; 
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: SFCompactTextRegular;
+    font-size: 12pt;
+    color: #f2f4ff;
+}
+
+.janela {
+	width: 200px;
+	height: 200px;
+	border: 3px solid black;
+	border-top-right-radius: 0.1in;
+	border-top-left-radius: 0.1in;
+	border-bottom-right-radius: 0.1in;
+	border-bottom-left-radius: 0.1in;
+	margin: auto;
+    background-color: black;
+}
+
+.barra {
+	width: 100%;
+	height: 15%;
+}
+
+.subtitulo {
+	height: 100%;
+	line-height: 0.3in;
+	float: left;
+	padding-left: 2%;
+}
+
+.clock {
+	height: 100%;
+	line-height: 0.3in;
+	float: right;
+	padding-right: 2%;
+}
+
+.barra:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu-restaurantes {
+	width: 100%;
+	height: 85%;
+	overflow-y: auto;
+}
+
+.menu-item {
+    width: 50%;
+    height: 50%;
+}
+
+.menu-item img {
+	width: 100%;
+	height: 100%;
+
+}
+
+#bar1 {
+	float: left;
+}
+
+#bar2 {
+	float: right;
+}
+
+#bar3 {
+	float: left;
+}
+
+#bar4 {
+	float: right;
+}
+
+#bar5 {
+	float: left;
+}
+
+#bar6 {
+	float: right;
+}
+
+
+::-webkit-scrollbar {
+    width: 3%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgrey;
+}
+
+::-webkit-scrollbar-thumb {
+  	background-color: darkgrey;
+}
+
+
+#container {
+    position: absolute;
+    height: 250px;
+    width:250px;
+    top: 210px;
+    left: 320px;
+    max-height: 250px;
+    max-width: 250px;
+    margin: auto;
+}
+
+#undo {
+    position: absolute;
+    top:111px;
+    right: 0;
+    width: 7px;
+	height: 65px;
+	border-top-right-radius: 0.1in;
+	border-top-left-radius: 0.1in;
+	border-bottom-right-radius: 0.1in;
+	border-bottom-left-radius: 0.1in;
+    background-color: grey;
+}
+
+#relogio {
+    height: 651px;
+    width: 890px;
+}
